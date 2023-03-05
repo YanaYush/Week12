@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="input_wrapper">
+            <h2>Оставьте ваш комментарий</h2>
+
+            <p>Введите ваше ФИО</p>
+            <input type="text" class="input_wrapper__name" id="input_wrapper__name">
+
+            <p>Добавьте ссылку на фото</p>
+            <input type="text" class="input_wrapper__picture" id="input_wrapper__picture" onfocus="checkName()">
+
+            <p>Оставьте комментарий</p>
+            <textarea id="comment" type="text" class="input_wrapper__comment"></textarea>
+            <br />
+            <br />
+            <button onclick="showComment()">Отправить</button>
+        </div>
+
+        <div class="chat_wrapper" id="outputcomment">
+            <h2>Комментарии</h2>
+
+        </div>
+    </div>
+
+    <script src="./index.js">
+    </script>
+</body>
+
+</html>
